@@ -22,7 +22,7 @@
             'w-full opacity-100': isExpanded
           }"
             class="overflow-hidden  text-5xl dark:text-neutral-100 text-black font-semibold whitespace-nowrap transition-all duration-300 ease-in-out px-4">
-            {{title}}
+            titulo
         </div>
         <div class="hover:cursor-pointer  lg:hidden" (click)="onExpandPressed()">
             <span class="text-black dark:text-white text-4xl material-symbols-outlined">
@@ -52,7 +52,7 @@
             }
             @if(submenu.type === "group"){
             <div class="text-neutral-600 mb-10 font-medium text-2xl">
-                {{ submenu.title }}
+                titulo de sub menu
             </div>
             @for (subsubmenu of submenu.menus; track $index) {
             <app-sidebar-item-link [link]="subsubmenu.link" [title]="subsubmenu.title"></app-sidebar-item-link>

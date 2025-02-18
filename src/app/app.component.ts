@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ContentComponent } from './content/content.component';
 import { ThemeService, Theme } from './services/theme.service';
 import { ThemeCustomizerComponent } from './content/theme-customizer';
+import { SidebarComponent } from './content/shared-component/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +18,10 @@ import { ThemeCustomizerComponent } from './content/theme-customizer';
     ThemeCustomizerComponent,
     ContentComponent,
     MatMenuModule,
+    SidebarComponent
   ],
   template: `
+  <app-sidebar></app-sidebar>
     <mat-toolbar>
       <span>Angular Custom Themes</span>
       <button mat-icon-button [matMenuTriggerFor]="themeMenu">
