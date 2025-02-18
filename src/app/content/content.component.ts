@@ -11,6 +11,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatRadioModule } from '@angular/material/radio';
 import { SampleDialogComponent } from '../dialog/sample-dialog.component';
 import { ThemeCustomizerComponent } from './theme-customizer';
+import { CalendarioComponent } from './shared-component/calendario/calendario.component';
 
 @Component({
   selector: 'app-content',
@@ -26,6 +27,7 @@ import { ThemeCustomizerComponent } from './theme-customizer';
     FormsModule,
     MatExpansionModule,
     MatRadioModule,
+    CalendarioComponent
   ],
   template: `
     <div class="content responsive-grid">
@@ -93,7 +95,8 @@ import { ThemeCustomizerComponent } from './theme-customizer';
         <br /><br />
       </div>
       <div>
-        <h3>A card</h3>
+      <app-calendario></app-calendario>
+        <h3>A card</h3>   
         <mat-card class="example-card" appearance="outlined">
           <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>

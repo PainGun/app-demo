@@ -8,6 +8,7 @@ import { ThemeService, Theme } from './services/theme.service';
 import { ThemeCustomizerComponent } from './content/theme-customizer';
 import { SidebarComponent } from './content/shared-component/sidebar/sidebar.component';
 import { FormComponent } from './content/shared-component/form/form.component';
+import { CalendarioComponent } from "./content/shared-component/calendario/calendario.component";
 
 @Component({
   selector: 'app-root',
@@ -45,7 +46,7 @@ import { FormComponent } from './content/shared-component/form/form.component';
     </mat-toolbar>
     <app-theme-customizer></app-theme-customizer>
     <app-content></app-content>
-    <app-form></app-form>
+    <app-form></app-form> 
   `,
   styles: `
     @use '@angular/material' as mat;
