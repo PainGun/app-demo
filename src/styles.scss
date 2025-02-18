@@ -1,0 +1,47 @@
+@use "@angular/material" as mat;
+@import "./app/themes/themes.css";
+@import "tailwindcss";
+
+:root {
+  /* Establecer el tamaño de fuente en el :root utilizando la variable CSS */
+  font-size: var(--mat-sys-font-size, 16px) !important;
+  /* Valor por defecto en caso de que no esté definido */
+}
+
+/* Aplica el estilo global al html y body */
+html {
+  height: 100%;
+  font-size: var(--mat-sys-font-size, 16px) !important;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--mat-sys-font-family, Arial, sans-serif);
+  background-color: var(--mat-sys-background, #ffffff);
+  color: var(--mat-sys-on-background, #000000);
+  font-size: var(--mat-sys-font-size, 16px) !important;
+}
+
+/* Asegurando que inputs, botones y elementos comunes también usen el tamaño de fuente */
+button,
+input,
+select,
+textarea {
+  font-size: var(--mat-sys-font-size, 16px) !important;
+}
+
+/* Material components */
+.mat-typography {
+  font-size: var(--mat-sys-font-size, 16px) !important;
+}
+
+/* Forzar la aplicación del tamaño en elementos de texto de Angular Material */
+.mat-body-1,
+.mat-body-2,
+.mat-headline-1,
+.mat-headline-2,
+.mat-title,
+.mat-caption {
+  font-size: var(--mat-sys-font-size, 16px) !important;
+}
